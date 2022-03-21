@@ -166,11 +166,6 @@ for x in range(image.get_height()):
         img[x,y] = (newColorList[count][2], newColorList[count][1], newColorList[count][0])
         count += 1
 
-cv2.imshow('imagen1',img)
-
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-
 cv2.imwrite('Palette/Output/img.jpg', img)
 
 
