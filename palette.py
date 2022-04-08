@@ -5,7 +5,7 @@ pygame.init()
 
 colors = []
 
-with open('Palette/colors.json', 'r') as file:
+with open('colors.json', 'r') as file:
    data = json.load(file)
 
    for color in data['colors']:
@@ -39,18 +39,18 @@ with open('Palette/colors.json', 'r') as file:
        for value in color['C14']:
            c = ((value['r'], value['g'], value['b']))
            colors.append(c)
-       #for value in color['040']:
-           #c = ((value['r'], value['g'], value['b']))
-           #colors.append(c)
+       for value in color['040']:
+           c = ((value['r'], value['g'], value['b']))
+           colors.append(c)
        for value in color['M20']:
            c = ((value['r'], value['g'], value['b']))
            colors.append(c)
        for value in color['C18']:
            c = ((value['r'], value['g'], value['b']))
            colors.append(c)
-       #for value in color['048']:
-           #c = ((value['r'], value['g'], value['b']))
-           #colors.append(c)
+       for value in color['048']:
+           c = ((value['r'], value['g'], value['b']))
+           colors.append(c)
        for value in color['M49']:
            c = ((value['r'], value['g'], value['b']))
            colors.append(c)
@@ -130,11 +130,98 @@ with open('Palette/colors.json', 'r') as file:
            c = ((value['r'], value['g'], value['b']))
            colors.append(c)
 
-files = os.listdir('Palette/Input')
+with open('available.json', 'r') as file:
+   available = json.load(file)
+
+   for codes in available['colors']: 
+       if codes['N10'] != True:
+           del(colors[0])
+       if codes['04'] != True:
+           del(colors[1])
+       if codes['M3'] != True:
+           del(colors[2])
+       if codes['C2'] != True:
+           del(colors[3])
+       if codes['B34'] != True:
+           del(colors[4])       
+       if codes['N01'] != True:
+           del(colors[5])
+       if codes['N21'] != True:
+           del(colors[6])
+       if codes['N19'] != True:
+           del(colors[7])
+       if codes['017'] != True:
+           del(colors[8])
+       if codes['C14'] != True:
+           del(colors[9])
+       if codes['040'] != True:
+           del(colors[10])
+       if codes['M20'] != True:
+           del(colors[11])
+       if codes['C18'] != True:
+           del(colors[12])
+       if codes['048'] != True:
+           del(colors[13])
+       if codes['M49'] != True:
+           del(colors[14])       
+       if codes['C50'] != True:
+           del(colors[15])
+       if codes['N11'] != True:
+           del(colors[16])
+       if codes['022'] != True:
+           del(colors[17])
+       if codes['M16'] != True:
+           del(colors[18])
+       if codes['C15'] != True:
+           del(colors[19])
+       if codes['042'] != True:
+           del(colors[20])
+       if codes['M24'] != True:
+           del(colors[21])
+       if codes['C32'] != True:
+           del(colors[22])
+       if codes['044'] != True:
+           del(colors[23])
+       if codes['M43'] != True:
+           del(colors[24])       
+       if codes['C41'] != True:
+           del(colors[25])
+       if codes['N09'] != True:
+           del(colors[26])
+       if codes['030'] != True:
+           del(colors[27])
+       if codes['M29'] != True:
+           del(colors[28])
+       if codes['C28'] != True:
+           del(colors[29])
+       if codes['R26'] != True:
+           del(colors[30])
+       if codes['N05'] != True:
+           del(colors[31])
+       if codes['012'] != True:
+           del(colors[32])
+       if codes['M8'] != True:
+           del(colors[33])
+       if codes['C6'] != True:
+           del(colors[34])       
+       if codes['N07'] != True:
+           del(colors[35])
+       if codes['E60'] != True:
+           del(colors[36])
+       if codes['E80'] != True:
+           del(colors[37])
+       if codes['E100'] != True:
+           del(colors[38])
+       if codes['L46'] != True:
+           del(colors[39])
+
+print(colors)
+
+files = os.listdir('InputPallete')
 f = files[0]
 
-image = pygame.image.load('Palette/Input/' + f)
-im = PIL.Image.open('Palette/Input/' + f)
+image = pygame.image.load('InputPallete/' + f)
+im = PIL.Image.open('InputPallete/' + f)
 colorList = []
     
 for y in range(image.get_height()):
