@@ -5,7 +5,7 @@ pygame.init()
 size = [840, 1188]
 screen = pygame.display.set_mode(size)
 
-files = os.listdir('Encoder/Input')
+files = os.listdir('InputEncoder')
 
 n01Count = 0
 
@@ -13,8 +13,8 @@ for f in files:
     #print(f)
     name = f[5:8]
 
-    image = pygame.image.load('Encoder/Input/' + f)
-    im = PIL.Image.open('Encoder/Input/' + f)
+    image = pygame.image.load('InputEncoder/' + f)
+    im = PIL.Image.open('InputEncoder/' + f)
     colorList = []
     
     for y in range(image.get_height()):
@@ -101,7 +101,7 @@ for f in files:
     gridSize = [17, 24]
 
     xOffset = 28
-    yOffset = 60#40
+    yOffset = 60
     spacing = 7
 
     screen.fill((255, 255, 255))
@@ -123,7 +123,7 @@ for f in files:
     screen.blit(title, (size[0]/2, 15))
 
     pygame.display.update()
-    pygame.image.save(screen, 'Encoder/Output/Hoja ' + name + '.png')
+    pygame.image.save(screen, 'OutputEncoder/Hoja ' + name + '.png')
 
 print('Cantidades de venecitas:')
 print(f'    N01: {n01Count}')
