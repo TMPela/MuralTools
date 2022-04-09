@@ -135,85 +135,85 @@ with open('available.json', 'r') as file:
 
    for codes in available['colors']: 
        if codes['N10'] != True:
-           del(colors[0])
+            colors[0] = (1000, 1000, 1000)
        if codes['04'] != True:
-           del(colors[1])
+            colors[1] = (1000, 1000, 1000)
        if codes['M3'] != True:
-           del(colors[2])
+            colors[2] = (1000, 1000, 1000)
        if codes['C2'] != True:
-           del(colors[3])
+            colors[3] = (1000, 1000, 1000)
        if codes['B34'] != True:
-           del(colors[4])       
+            colors[4] = (1000, 1000, 1000)
        if codes['N01'] != True:
-           del(colors[5])
+            colors[5] = (1000, 1000, 1000)
        if codes['N21'] != True:
-           del(colors[6])
+            colors[6] = (1000, 1000, 1000)
        if codes['N19'] != True:
-           del(colors[7])
+            colors[7] = (1000, 1000, 1000)
        if codes['017'] != True:
-           del(colors[8])
+            colors[8] = (1000, 1000, 1000)
        if codes['C14'] != True:
-           del(colors[9])
+            colors[9] = (1000, 1000, 1000)
        if codes['040'] != True:
-           del(colors[10])
+            colors[10] = (1000, 1000, 1000)
        if codes['M20'] != True:
-           del(colors[11])
+            colors[11] = (1000, 1000, 1000)
        if codes['C18'] != True:
-           del(colors[12])
+            colors[12] = (1000, 1000, 1000)
        if codes['048'] != True:
-           del(colors[13])
+            colors[13] = (1000, 1000, 1000)
        if codes['M49'] != True:
-           del(colors[14])       
+            colors[14] = (1000, 1000, 1000)
        if codes['C50'] != True:
-           del(colors[15])
+            colors[15] = (1000, 1000, 1000)
        if codes['N11'] != True:
-           del(colors[16])
+            colors[16] = (1000, 1000, 1000)
        if codes['022'] != True:
-           del(colors[17])
+            colors[17] = (1000, 1000, 1000)
        if codes['M16'] != True:
-           del(colors[18])
+            colors[18] = (1000, 1000, 1000)
        if codes['C15'] != True:
-           del(colors[19])
+            colors[19] = (1000, 1000, 1000)
        if codes['042'] != True:
-           del(colors[20])
+            colors[20] = (1000, 1000, 1000)
        if codes['M24'] != True:
-           del(colors[21])
+            colors[21] = (1000, 1000, 1000)
        if codes['C32'] != True:
-           del(colors[22])
+            colors[22] = (1000, 1000, 1000)
        if codes['044'] != True:
-           del(colors[23])
+            colors[23] = (1000, 1000, 1000)
        if codes['M43'] != True:
-           del(colors[24])       
+            colors[24] = (1000, 1000, 1000)
        if codes['C41'] != True:
-           del(colors[25])
+            colors[25] = (1000, 1000, 1000)
        if codes['N09'] != True:
-           del(colors[26])
+            colors[26] = (1000, 1000, 1000)
        if codes['030'] != True:
-           del(colors[27])
+            colors[27] = (1000, 1000, 1000)
        if codes['M29'] != True:
-           del(colors[28])
+            colors[28] = (1000, 1000, 1000)
        if codes['C28'] != True:
-           del(colors[29])
+            colors[29] = (1000, 1000, 1000)
        if codes['R26'] != True:
-           del(colors[30])
+            colors[30] = (1000, 1000, 1000)
        if codes['N05'] != True:
-           del(colors[31])
+            colors[31] = (1000, 1000, 1000)
        if codes['012'] != True:
-           del(colors[32])
+            colors[32] = (1000, 1000, 1000)
        if codes['M8'] != True:
-           del(colors[33])
+            colors[33] = (1000, 1000, 1000)
        if codes['C6'] != True:
-           del(colors[34])       
+            colors[34] = (1000, 1000, 1000)
        if codes['N07'] != True:
-           del(colors[35])
+            colors[35] = (1000, 1000, 1000)
        if codes['E60'] != True:
-           del(colors[36])
+            colors[36] = (1000, 1000, 1000)
        if codes['E80'] != True:
-           del(colors[37])
+            colors[37] = (1000, 1000, 1000)
        if codes['E100'] != True:
-           del(colors[38])
+            colors[38] = (1000, 1000, 1000)
        if codes['L46'] != True:
-           del(colors[39])
+            colors[39] = (1000, 1000, 1000)
 
 print(colors)
 
