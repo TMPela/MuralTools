@@ -212,6 +212,7 @@ for x in range(image.get_height()):
         count += 1
 
 cv2.imshow('Img1', img)
+
 cv2.waitKey(0) 
 cv2.destroyAllWindows() 
 
